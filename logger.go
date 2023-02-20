@@ -17,9 +17,9 @@ func (dl *DebugLogger) IsEnable(ctx context.Context) bool {
 }
 
 func (dl *DebugLogger) LogRequest(ctx context.Context, request string) {
-	logrus.Debugf(request)
+	logrus.Infof(request)
 }
 
 func (dl *DebugLogger) LogResponse(ctx context.Context, response string, kvs ...interface{}) {
-	logrus.Debugf(response, kvs...)
+	logrus.Infof(response, kvs...)
 }
